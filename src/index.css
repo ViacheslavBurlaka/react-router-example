@@ -17,6 +17,7 @@ code {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
   max-width: 400px;
 }
@@ -25,4 +26,38 @@ table td,
 table th {
   padding: 1rem;
   text-align: left;
+}
+
+.Header {
+  position: sticky;
+  top: 0;
+  padding: 1.5rem;
+  background-color: lightblue;
+}
+
+.Header a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: initial;
+}
+
+.Header a:hover {
+  color: darkslategray;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: circle;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
 }

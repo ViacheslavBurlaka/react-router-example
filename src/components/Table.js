@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from 'styled-components'
 
 const StyledTable = styled.table`
@@ -11,7 +10,6 @@ const StyledTable = styled.table`
   border-radius: 3px;
 `;
 
-
 const Table = (props) => {
   const user = props.data;
   return (
@@ -19,15 +17,15 @@ const Table = (props) => {
       <thead>
       <tr>
         <th>Name</th>
-        <th>ID</th>
-        <th>Followers</th>
+        <th>Location</th>
+        <th>Repos</th>
       </tr>
       </thead>
       <tbody>
       <tr>
         <td>{user.name}</td>
-        <td>{user.id}</td>
-        <td>{user.followers}</td>
+        <td>{user.location}</td>
+        <td>{user.public_repos}</td>
       </tr>
       </tbody>
     </StyledTable>
